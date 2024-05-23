@@ -1,0 +1,27 @@
+  <div class="navbar navbar-light navbar-expand-sm" style="background-color: rgb(41, 186, 33); text-color: rgb #ffffff;" >
+        <div class="container">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a asp-controller="Home" asp-action="Index" class="nav-link text-white">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a asp-controller="Product" asp-action="list" class="nav-link text-white">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a asp-controller="Home" asp-action="Contacts"class="nav-link text-white">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a asp-controller="Product" asp-action="AddProduct"class="nav-link text-white">Add Product</a>
+                </li>
+                <li class="nav-item">
+                    <a asp-controller="Home" asp-action="Login" class="btn btn-light text-green"  role="button">Log in</a>
+                </li>
+            </ul>
+            <form action="/Product/list" class="d-flex">
+            
+                <input name="q" type="text" class="form-control mr-2" placeholder="Search Products">
+                <button type="submit" class="btn btn-outline-light mr-0">Search</button>
+
+            </form>
+        </div>
+    </div>

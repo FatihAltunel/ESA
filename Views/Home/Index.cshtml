@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Home</title>
+</head>
+<body>
+<section style="height:100vh;">
+
+    @await Html.PartialAsync("_navbar")
+     @await Html.PartialAsync("_header") 
+
+    <main>
+        @* <div class="container1" style="margin-top: 100px; display: flex; height: 400px;">
+            <div class="row justify-content-center">
+                 <div class="col-md-6">
+                    <h1 class="text-center">Electronics Shopping App</h1>
+                    <br>
+                    <br>
+                    <p class="text-center">The purpose of this site is to offer users the opportunity to purchase electronic products online and to facilitate the electronic shopping experience.</p>
+                </div> 
+            </div>
+        </div> *@
+        <div class="container2" style="margin-left: 650px; margin-bottom: 100px;">            
+            <div class="md-12">
+                <a class="btn btn-primary" href="/Product/List" role="button">Purchase Now!</a>
+            </div>
+        </div>
+    </main>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    @await Html.PartialAsync("_footer")
+    
+</section>
+</body>
+</html>

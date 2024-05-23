@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\fatih\\Desktop\\ESA\\wwwroot\\images\\13pro.jpeg",
+      "PackagePath": "staticwebassets\\images\\13pro.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\fatih\\Desktop\\ESA\\wwwroot\\images\\S18.jpeg",
+      "PackagePath": "staticwebassets\\images\\S18.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\fatih\\Desktop\\ESA\\wwwroot\\images\\S19.jpeg",
+      "PackagePath": "staticwebassets\\images\\S19.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\fatih\\Desktop\\ESA\\wwwroot\\images\\S20.jpeg",
+      "PackagePath": "staticwebassets\\images\\S20.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\fatih\\Desktop\\ESA\\wwwroot\\images\\S21.jpeg",
+      "PackagePath": "staticwebassets\\images\\S21.jpeg"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.ESA.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.ESA.props",
+      "PackagePath": "build\\ESA.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.ESA.props",
+      "PackagePath": "buildMultiTargeting\\ESA.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.ESA.props",
+      "PackagePath": "buildTransitive\\ESA.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

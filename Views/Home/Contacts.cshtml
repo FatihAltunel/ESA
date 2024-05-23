@@ -1,0 +1,80 @@
+@model ESA.Models.Comment //Bu sayfa Comment sınıfından veriler kullanıyor
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Home/Contacts</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+        }
+
+        .contact-info{
+            margin-left: 100px;
+            margin-top: 20px;
+        }
+        .form{
+            margin-left: 450px;
+            margin-top: 20px;
+        }
+
+        footer {
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    @await Html.PartialAsync("_navbar")
+    
+    
+    <main>
+        <div class="contact-info">
+            <u><h2>Contact Information:</h2></u>
+            <h4>Fatih Altunel</h4>
+            <p>fatih.altunel@ogr.sakarya.edu.tr</p>
+            
+            <h4>Ayşe Yasemin İlik</h4>
+            <p>ayse.ilik@ogr.sakarya.edu.tr</p>
+
+            <h4>Buse Yüsra Köse</h4>
+            <p>yusra.kose@ogr.sakarya.edu.tr</p>
+
+            <h4>Talha Zehir</h4>
+            <p>talhazehir61@gmail.com</p>
+        
+        </div>
+
+        <div class="form">
+        <h1>Welcome to our Site</h1>
+        @* Home Controller altında Contact methoduna post yoluyla bu formdan veri gönderilecek *@
+        <form action="/Home/Contacts" method="post"> 
+            <div class="form-group">
+                <label for="name">Username</label>
+                <input asp-for="Username" type="name" class="form-control" id="exampleInputname" aria-describedby="nameHelp" placeholder="Enter username">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input asp-for="Email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label for="comment">Comment:</label>
+                <textarea asp-for="CommentLine" class="form-control" id="comment" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        </div>
+    </main>
+
+    @await Html.PartialAsync("_footer")
+
+</body>
+</html>
